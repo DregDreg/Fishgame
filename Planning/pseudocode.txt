@@ -1,0 +1,48 @@
+Bullets (object){
+Constructor(Location x,Location y)
+Location x: Value
+Location y: Value
+isTouching: False
+}
+
+Maincharacter (object){
+Constructor(Health, locationx, locationy,)
+Location x: Value
+Location y: Value
+Health: Value
+}
+
+Function FirstFishAttack(){
+let fish1 = new bullet(0,400)
+let fish2 = new bullet(100,400)
+let fish3 = new bullet(200,400)
+let fish4 = new bullet(300,400)
+let randpoint = [randIntx, randInty]
+let valueincreasex1 = (randIntx-fish1.x)/100 
+let valueincreasex2 = (randIntx-fish2.x)/100 
+let valueincreasex3 = (randIntx-fish3.x)/100 
+let valueincreasex4 = (randIntx-fish4.x)/100
+while(stepmarker<300){
+fish1.x = fish1.x + valueincreasex1, fish1.y = fish1.y + (400-randInty)/100,
+fish2.x = fish2.x + valueincreasex2, fish2.y = fish2.y + (400-randInty)/100,
+fish3.x = fish3.x + valueincreasex3, fish3.y = fish3.y + (400-randInty)/100,
+fish4.x = fish4.x + valueincreasex4, fish4.y = fish4.y + (400-randInty)/100,
+stepmarker = stepmarker + 1
+}
+erashallfish()
+}
+
+collisondetection(){
+if (bulletxvalue - xmaincharacterxvalue <= maincharacterwidth){
+clear bullet
+mancharacter.health - 1}
+}
+
+collision detecter(){
+If(maincharacter.x - bullet.x < maincharacter'ssprite.length OR maincharacter.x - bullet.x > maincharacter'ssprite.length){
+If(maincharacter.y - bullet.y < maincharacter'ssprite.width OR maincharacter.y - bullet.y > maincharacter'ssprite.width){
+maincharacter.health - 1
+}
+}
+
+keydown and keyup are two different things, to have fluid moment, pressing a key would set "moving" to true, and when moving is true, the pieces continuously move depending on what key is being pressed. problems come when two key are pressed at the same time, as it depends what will happen if the first movement gets replaced or not.

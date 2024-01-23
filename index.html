@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Give your game / page a title! -->
+    <title>  </title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    
+    <!-- This will load the script file AFTER the document is loaded -->
+    <script src="script.js" defer></script>
+    
+  </head>
+  <body>
+    <center>
+    <h2>Fish Game</h1>
+    <div id="game">
+    <h2 id= "playerhealth" >player health</h1>
+    <h2 id= "fishcoin">fishcoins:</h1>
+      <h2 id= "DDR">The current key pressed is:</h2>
+      <h2 id= "completion">The current key pressed is:</h2>
+    <canvas id="bulletcanvas" width="600" height="800" style="border:1px solid#000000">Sorry, but ther fish arn't here right now.</canvas>
+      </div>
+      <div id="startbutton">
+        <button id=startgame>StartGame</button>
+          <button id=easy>Easy(30)</button>
+          <button id=regular>Regular(15)</button>
+          <button id=hard>Hard(10)</button>
+          <button id=infinite>Infinite(999)</button>
+        </div>
+    <h3 id="congrats">Hello! Welcome to the Fish Game! The rules are quite simple, to just dodge all of the projectiles while collecting the water droplets that appear around the stage. To regain health, either collect fish coins, near miss enemy projectiles, or press the keys listed at the top using your arrowkeys to gain "Fishenergy". Fishenergy gets converted into health at 20 Fishenergy. Careful though, as pressing a wrong key loses life instead. The controls are the WASD keys to move the character and the arrow keys to press the allocated values in sequence to gain health. To start, press a button below to decide your health then press start! Good Luck!</h3>
+      <br>
+    <h3>Known Bugs:</h3> 
+      <h3>The coins sometimes do not appear. I don't know why this happens, they always spawn in bounds however sometimes they just don't appear. My best guess is that maybe this is because they spawn on the same location as a projectile, however that still doesn't make sense to me as when the projectile would pass they would hypothetically just get drawn again.</h3>
+    <h3>The main character's sprite flickers when moved for the first time, however because this is temporary and purely cosmetic it's not a large issue.
+</h3>
+      </center>
+  </body>
+
+  
+</html>
